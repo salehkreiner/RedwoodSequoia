@@ -25,7 +25,7 @@ namespace API.Controllers
 
         }
 
-        [HttpGet("{id}")] // someone will request from api/products/3 and this "id" parameter is the 3
+        [HttpGet("{id}")] // someone will request from api/products/3 and this "id" parameter is the 3...
         public async Task<ActionResult<Product>> GetProduct(int id)
         {
             return await _context.Products.FindAsync(id);
